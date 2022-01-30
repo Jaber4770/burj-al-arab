@@ -5,6 +5,7 @@ const Book = () => {
     const {bedType} = useParams();
     return (
         <div style={{textAlign: 'center'}}>
+            <h1>Find here what you are looking here!</h1>
             <h1>Let's book a {bedType} Room.</h1>
             <p>Want a <Link to="/home">different room?</Link> </p>
         </div>
