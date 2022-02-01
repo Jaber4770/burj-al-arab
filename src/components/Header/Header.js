@@ -22,7 +22,7 @@ const Header = () => {
                     </li>
                     <li>
                         {
-                            user.email ? <div>
+                            user.email ? <div className='inline-block'>
                                 <span className='style'>Welcome {user.displayName}</span>{' '}
                                 <button onClick={LogOut}>Log Out</button>
                             </div>
