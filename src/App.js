@@ -11,6 +11,7 @@ import Book from './components/Book/Book';
 import Header from './components/Header/Header';
 import AuthProvider from './Context/AuthProvider';
 import SignUp from './components/signUp/SignUp';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -27,9 +28,12 @@ function App() {
           <Route path="/signup">
             <SignUp />
           </Route>
-          <Route path="/book/:bedType">
+          <PrivateRoute path="/book/:bedType">
             <Book />
-          </Route>
+          </PrivateRoute>
+          <PrivateRoute path="/book">
+            <Book />
+          </PrivateRoute>
           <Route exact path="/">
             <Home />
           </Route>
